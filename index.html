@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+ 
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>LysBowl Dices</title>
+
+    </head>
+<body>
+    <h1>Fanatasy Bowl Dices</h1>
+    <div>
+        <h2>
+            Dés Blocage
+        </h2>
+    </div>
+    <!--BLOCK DICES-->
+    <div class="blocks__sections">
+        <div class="block__dice">
+            <br>
+            <label for="blockdice__count">Combien de dés de "blocage" souhaitez-vous lancer ?</label>
+            <select id="blockdice__count">
+                <option value="1">1 dé</option>
+                <option value="2">2 dés</option>
+                <option value="3">3 dés</option>
+            </select>
+        </div>
+        <section class="block__dice">    
+            <button id="roll_blokdice">Lancer les dés</button>
+            <br><br>
+            <div id="blokdice_result">Résultat:</div>
+            
+        </section>
+    </div>
+    <!---->
+<section>
+
+</section>
+
+
+    <!--OTHERS DICES-->
+    <div>
+        <h2>
+            Autres Dés
+        </h2>
+    </div>
+    <div class="blocks__sections">
+        <div id="dice-selector">
+            <h3>Choisissez le nombre de dés</h3>
+            <select id="dice__number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <h3>Choisissez le nombre de faces</h3>
+            <select id="dice__faces">
+                <option value="6">6</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+            </select>
+        </div>    
+
+        <section class="block__dice">
+                <button id="roll-dice">Lancer les dés</button>
+                <br><br>
+                <div id="dice__container">
+                    Résultat:
+                </div>
+                <div class="parchemin">
+                    <div id="total"></div>
+                </div>
+        </section>
+    </div>
+
+    <section class="liens">
+        <a href="#" class="backto__accueil"> Retour page d'accueil Lys Bowl </a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+

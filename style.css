@@ -1,0 +1,127 @@
+body {
+    background-image: url(img/BG_Stadium_dés.png);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px  #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+.blocks__sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6f6f6f97;
+    border-radius: 5%;
+    margin: 5px;
+    width: 90%;
+    max-width: 500px;
+}
+
+select {
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #FF69B4;
+    border-radius: 5px;
+}
+
+#blockdice__count {
+    margin: 5px;
+    
+}
+
+#dice-selector, .block__dice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    height: auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+
+#roll-dice, #roll_blokdice {
+    background-color: #ae2626a8;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+}
+#roll_blokdice:hover, #roll-dice:hover{
+    background-color: #4d0707;
+    color: #FFF;
+}
+
+#dice__container, #blokdice_result{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+}
+.dice, #blokdice_result div img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 2px 2px #ff6969;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    animation: roll-die 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes roll-die {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+#total {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px;
+    text-shadow: 2px 2px #8B008B;
+}
+
+.parchemin{
+    background-image: url(img/banniere_total.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%; height: 80px;
+    min-height: 80px;
+    margin: 20px;
+}
+
+.liens{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.backto__accueil{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.backto__accueil:hover{
+font-size: 120%;
+text-decoration:underline;
+}
